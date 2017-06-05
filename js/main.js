@@ -143,8 +143,9 @@ jQuery(document).ready(function($) {
           },
           completion: true,
           checkArity: false
-          
+
       });
+      this.exec(all)
     } else {
         $('body').terminal(App, {
             greetings: function(cb){
