@@ -19,7 +19,7 @@ var App = {
             "|[[b;#00DE12;]\t    | | | | | | | |___| (_) | (_) |   <| |  __/| ||  __/ (__| | | |       ]\t|\n"+
             "|[[b;#00DE12;]\t    |_|_| |_| |_|\\_____\\___/ \\___/|_|\\_\\_|\\___(_)__\\___|\\___|_| |_|       ]\t|\n"+
             "|\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  |\n"+
-            "|\tMy name is" + commandText(' TmCookie') + " - Wannabe hardware hacker and coder.          \t|\n"+
+            "|\tMy name is" + commandText(' TmCookie') + " - Wannabe hardware hacker and coder.                  \t|\n"+
             "|\tPlease type " + commandText('menu') + " for a list of commands.  \t\t\t\t\t\t\t\t\t|\n"+
             "|\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  |\n"+
             "####################################################################################\n";
@@ -120,9 +120,14 @@ var App = {
         this.exec('credits');
     },
 
+    help: function(){
+        this.exec('menu');
+    },
+
     ls: function(){
         this.exec('menu');
     }
+
 }
 
 jQuery(document).ready(function($) {
