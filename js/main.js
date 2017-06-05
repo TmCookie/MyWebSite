@@ -132,7 +132,18 @@ var App = {
 
 jQuery(document).ready(function($) {
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        window.location.href = "https://www.linkedin.com/profile/view?id=298500285";
+      $('body').terminal(App, {
+          greetings: function(cb){
+              cb(App.motd(true));
+          },
+
+          onBlur: function() {
+              // prevent loosing focus
+              return false;
+          },
+          completion: true,
+          checkArity: false
+      });
     } else {
         $('body').terminal(App, {
             greetings: function(cb){
