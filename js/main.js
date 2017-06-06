@@ -40,6 +40,7 @@ var App = {
         this.echo();
         this.echo("|  " + commandText("github") + "             - Das github");
         this.echo("|  " + commandText("twitter") + "            - When 140 characters is enough");
+        this.echo("|  " + commandText("Youtube") + "            - ROV videos and things i like");
         this.echo();
         this.echo("|  " + commandText("contact") + "            - Contact me")
         this.echo("|  " + commandText("credits") + "            - Credits for this website");
@@ -51,6 +52,12 @@ var App = {
     github: function(){
         this.echo();
         this.echo("|  https://github.com/TmCookie");
+        this.echo();
+    },
+
+    youtube: function(){
+        this.echo();
+        this.echo("|  https://www.youtube.com/channel/UCq5nvrVUmZuh89w7uPNumeA");
         this.echo();
     },
 
@@ -67,6 +74,7 @@ var App = {
         this.echo("|  Location:     " + commandText('Norway'));
         this.echo();
         this.echo("|  hobbies:      Hardware hacking, pc building and programming");
+        this.echo("|                underwater drone flying and Metal detecting");
         this.echo();
         this.echo("|  Employment:   i have no job yet :(");
         this.echo();
@@ -74,8 +82,11 @@ var App = {
 
     projects: function(){
         this.echo();
-        this.echo("|  worked on shitty discord bots");
-        this.echo("|  varios hardware hacking things with the bus pirate");
+        this.echo("|  Worked on shitty discord bots");
+        this.echo();
+        this.echo("|  Varios hardware hacking things with the bus pirate");
+        this.echo();
+        this.echo("|  Built an OpenROV, a lot of dives on my youtube");
         this.echo();
     },
 
@@ -83,20 +94,31 @@ var App = {
         this.echo();
         this.echo("|  " + commandText('Languages'));
         this.echo();
-        this.echo("|  " + commandText('Python') + "                 ##[[g;#99D100;]###############################]                    ##");
+        this.echo("|  " + commandText('Python') + "                 ##[[g;#99D100;]######################################]             ##");
+        this.echo("|  " + commandText('Batch') + "                  ##[[g;#D13F00;]##########################]                         ##");
         this.echo("|  " + commandText('C') + "                      ##[[g;#D13F00;]##########]                                         ##");
         this.echo();
-        this.echo("|  " + commandText("Other"));
+        this.echo();
+        this.echo("|  " + commandText("Programs"));
         this.echo();
         this.echo("|  " + commandText('Virtualbox') + "             ##[[g;#B2D100;]################################]                   ##");
         this.echo("|  " + commandText('Docker') + "                 ##[[g;#B2D100;]############]                                       ##");
         this.echo();
+        this.echo();
+        this.echo("|  " + commandText("OS"));
+        this.echo();
+        this.echo("|  " + commandText('Windows') + "                ##[[g;#99D100;]#########################################]          ##");
+        this.echo("|  " + commandText('Ubuntu') + "                 ##[[g;#99D100;]#######################################]            ##");
+        this.echo("|  " + commandText('Arch Linux') + "             ##[[g;#99D100;]##############################]                     ##");
+        this.echo();
+
+
     },
 
     contact: function(){
         this.echo();
-        this.echo("|  " + commandText("Email") + ":         lgardhs@gmail.com");
-        this.echo("|  " + commandText("Twitter") + ":      https://twitter.com/TmCookieMonster");
+        this.echo("|  " + commandText("Email:") + ":         lgardhs@gmail.com");
+        this.echo("|  " + commandText("Twitter:") + ":       https://twitter.com/TmCookieMonster");
         this.echo();
     },
 
@@ -116,6 +138,7 @@ var App = {
         this.exec('skills');
         this.exec('github');
         this.exec('twitter');
+        this.exec('youtube')
         this.exec('contact');
         this.exec('credits');
     },
