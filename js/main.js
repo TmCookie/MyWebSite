@@ -138,7 +138,7 @@ var App = {
         this.exec('skills');
         this.exec('github');
         this.exec('twitter');
-        this.exec('youtube')
+        this.exec('youtube');
         this.exec('contact');
         this.exec('credits');
     },
