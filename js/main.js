@@ -37,14 +37,14 @@ var App = {
         this.echo("|  " + commandText("about") + "              - Summary of me");
         this.echo("|  " + commandText("projects") + "           - Some recent projects of mine");
         this.echo("|  " + commandText("skills") + "             - What I can do");
-        this.echo();
+        this.echo("|");
         this.echo("|  " + commandText("github") + "             - Das github");
         this.echo("|  " + commandText("twitter") + "            - When 140 characters is enough");
         this.echo("|  " + commandText("Youtube") + "            - ROV videos and things i like");
-        this.echo();
+        this.echo("|");
         this.echo("|  " + commandText("contact") + "            - Contact me")
         this.echo("|  " + commandText("credits") + "            - Credits for this website");
-        this.echo();
+        this.echo("|");
         this.echo("|  " + commandText("all") + "                - Run all commands");
         this.echo();
     },
@@ -69,13 +69,13 @@ var App = {
 
     about: function(){
         this.echo();
-        this.echo("|  Name:         " + commandText('Gard HS'));
+        this.echo("|  Name:         " + commandText('Gard'));
         this.echo("|  DOB:          27/03/1998");
         this.echo("|  Location:     " + commandText('Norway'));
-        this.echo();
+        this.echo("|");
         this.echo("|  hobbies:      Hardware hacking, pc building and programming");
         this.echo("|                underwater drone flying and Metal detecting");
-        this.echo();
+        this.echo("|");
         this.echo("|  Employment:   i have no job yet :(");
         this.echo();
     },
@@ -83,9 +83,9 @@ var App = {
     projects: function(){
         this.echo();
         this.echo("|  Worked on shitty discord bots");
-        this.echo();
+        this.echo("|");
         this.echo("|  Varios hardware hacking things with the bus pirate");
-        this.echo();
+        this.echo("|");
         this.echo("|  Built an OpenROV, a lot of dives on my youtube");
         this.echo();
     },
@@ -93,23 +93,30 @@ var App = {
     skills: function(){
         this.echo();
         this.echo("|  " + commandText('Languages'));
-        this.echo();
+        this.echo("|");
         this.echo("|  " + commandText('Python') + "                 ##[[g;#99D100;]######################################]             ##");
-        this.echo("|  " + commandText('Batch') + "                  ##[[g;#D13F00;]##########################]                         ##");
+        this.echo("|  " + commandText('Batch') + "                  ##[[g;#d1ca00;]##########################]                         ##");
         this.echo("|  " + commandText('C') + "                      ##[[g;#D13F00;]##########]                                         ##");
-        this.echo();
-        this.echo();
+        this.echo("|");
+        this.echo("|");
         this.echo("|  " + commandText("Programs"));
-        this.echo();
+        this.echo("|");
         this.echo("|  " + commandText('Virtualbox') + "             ##[[g;#B2D100;]################################]                   ##");
-        this.echo("|  " + commandText('Docker') + "                 ##[[g;#B2D100;]############]                                       ##");
-        this.echo();
-        this.echo();
+        this.echo("|  " + commandText('Docker') + "                 ##[[g;#D13F00;]##########]                                         ##");
+        this.echo("|");
+        this.echo("|");
         this.echo("|  " + commandText("OS"));
-        this.echo();
+        this.echo("|");
         this.echo("|  " + commandText('Windows') + "                ##[[g;#99D100;]#########################################]          ##");
         this.echo("|  " + commandText('Ubuntu') + "                 ##[[g;#99D100;]#######################################]            ##");
-        this.echo("|  " + commandText('Arch Linux') + "             ##[[g;#99D100;]##############################]                     ##");
+        this.echo("|  " + commandText('Arch Linux') + "             ##[[g;#d1d100;]########################]                           ##");
+        this.echo("|");
+        this.echo("|");
+        this.echo("|  " + commandText("Other"));
+        this.echo("|");
+        this.echo("|  " + commandText('Soldering') + "              ##[[g;#65d100;]##############################################]     ##");
+        this.echo("|  " + commandText('Opening hardware') + "       ##[[g;#65d100;]############################################]       ##");
+        this.echo("|  " + commandText('Building computers') + "     ##[[g;#65d100;]###########################################]        ##");
         this.echo();
 
 
@@ -168,7 +175,7 @@ jQuery(document).ready(function($) {
           checkArity: false
 
       });
-      this.exec(all)
+
     } else {
         $('body').terminal(App, {
             greetings: function(cb){
