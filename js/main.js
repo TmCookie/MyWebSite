@@ -109,7 +109,6 @@ var App = {
         this.echo("|  " + commandText("Other"));
         this.echo("|");
         this.echo("|  " + commandText('Soldering') + "              ##[[g;#65d100;]##############################################]     ##");
-        this.echo("|  " + commandText('Opening hardware') + "       ##[[g;#65d100;]############################################]       ##");
         this.echo("|  " + commandText('Building computers') + "     ##[[g;#65d100;]###########################################]        ##");
         this.echo();
 
