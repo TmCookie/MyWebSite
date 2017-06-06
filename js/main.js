@@ -74,7 +74,7 @@ var App = {
         this.echo("|  Location:     " + commandText('Norway'));
         this.echo("|");
         this.echo("|  hobbies:      Hardware hacking, pc building and programming");
-        this.echo("|                underwater drone flying and Metal detecting");
+        this.echo("|                ROV and Metal detecting");
         this.echo("|");
         this.echo("|  Employment:   i have no job yet :(");
         this.echo();
@@ -97,12 +97,6 @@ var App = {
         this.echo("|  " + commandText('Python') + "                 ##[[g;#99D100;]######################################]             ##");
         this.echo("|  " + commandText('Batch') + "                  ##[[g;#d1ca00;]##########################]                         ##");
         this.echo("|  " + commandText('C') + "                      ##[[g;#D13F00;]##########]                                         ##");
-        this.echo("|");
-        this.echo("|");
-        this.echo("|  " + commandText("Programs"));
-        this.echo("|");
-        this.echo("|  " + commandText('Virtualbox') + "             ##[[g;#B2D100;]################################]                   ##");
-        this.echo("|  " + commandText('Docker') + "                 ##[[g;#D13F00;]##########]                                         ##");
         this.echo("|");
         this.echo("|");
         this.echo("|  " + commandText("OS"));
