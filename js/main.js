@@ -118,8 +118,8 @@ var App = {
 
     contact: function(){
         this.echo();
-        this.echo("|  " + commandText("Email:") + ":         lgardhs@gmail.com");
-        this.echo("|  " + commandText("Twitter:") + ":       https://twitter.com/TmCookieMonster");
+        this.echo("|  " + commandText("Email") + ":          lgardhs@gmail.com");
+        this.echo("|  " + commandText("Twitter") + ":        https://twitter.com/TmCookieMonster");
         this.echo();
     },
 
