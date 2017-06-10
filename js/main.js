@@ -37,6 +37,7 @@ var App = {
         this.echo("|  " + commandText("about") + "              - Summary of me");
         this.echo("|  " + commandText("projects") + "           - Some recent projects of mine");
         this.echo("|  " + commandText("skills") + "             - What I can do");
+        this.echo("|  " + commandText("tech") + "               - Notable tech owned");
         this.echo("|");
         this.echo("|  " + commandText("github") + "             - Das github");
         this.echo("|  " + commandText("twitter") + "            - When 140 characters is enough");
@@ -87,6 +88,18 @@ var App = {
         this.echo("|  Varios hardware hacking things with the bus pirate");
         this.echo("|");
         this.echo("|  Built an OpenROV, a lot of dives on my youtube");
+        this.echo("|");
+        this.echo("|  SDR(software defined radio) fun radio projects, NOAA satelite images and more");
+        this.echo();
+    },
+
+    tech: function(){
+        this.echo();
+        this.echo("|  -Wanhao duplicator 4s dual nozzle");
+        this.echo("|  -Bus pirate and Bus blaster");
+        this.echo("|  -Airspy R2 and HackRF");
+        this.echo("|  -laptops: Microsoft Surface pro 4 and Lenovo y50-70 with arch linux");
+        this.echo("|  -Homebuilt computers and servers");
         this.echo();
     },
 
@@ -109,7 +122,6 @@ var App = {
         this.echo("|  " + commandText("Other"));
         this.echo("|");
         this.echo("|  " + commandText('Soldering') + "              ##[[g;#65d100;]##############################################]     ##");
-        this.echo("|  " + commandText('Opening hardware') + "       ##[[g;#65d100;]############################################]       ##");
         this.echo("|  " + commandText('Building computers') + "     ##[[g;#65d100;]###########################################]        ##");
         this.echo();
 
@@ -137,6 +149,7 @@ var App = {
         this.exec('about');
         this.exec('projects');
         this.exec('skills');
+        this.exec('tech')
         this.exec('github');
         this.exec('twitter');
         this.exec('youtube');
